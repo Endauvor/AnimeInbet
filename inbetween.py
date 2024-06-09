@@ -83,8 +83,8 @@ class DraftRefine():
                 
           
             model.eval()
-            s0 = custom_data.DataSample('/kaggle/working/AnimeInbet/data/ml100_norm/all/frames/chip_abe/Image0027.png', '/kaggle/working/AnimeInbet/data/ml100_norm/all/labels/chip_abe/Line0027.json')
-            s1 = custom_data.DataSample('/kaggle/working/AnimeInbet/data/ml100_norm/all/frames/chip_abe/Image0032.png', '/kaggle/working/AnimeInbet/data/ml100_norm/all/labels/chip_abe/Line0032.json')
+            s0 = custom_data.DataSample('Image1.png', 'Line1.json')
+            s1 = custom_data.DataSample('Image2.png', 'Line2.json')
             data = custom_data.make_model_input(s0, s1)
 
             pred = model(data)
